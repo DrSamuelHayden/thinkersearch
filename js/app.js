@@ -247,8 +247,8 @@ function get_results(start){
 
 function goto(location,target)
 {
-window.location.href= location;
-}
+ window.open(location,'_blank');
+ }
 
 function get_thumb(title){
 wiki = 1;
