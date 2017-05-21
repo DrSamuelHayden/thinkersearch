@@ -6,7 +6,7 @@ http://airbrowsetechnologies.weebly.com/
 https://github.com/greekdev/google-clone
 */
 
-app_name = "AirBrowse Search";
+app_name = "THiNker Search";
 loc = "el";
 var squery;
 
