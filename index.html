@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>THiNker Search</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/app.css" type="text/css"/>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/suggest.js" type="text/javascript"></script>
+
+</head>
+<body onload"sizeres()">
+
+<div class="top">
+<a href="javascript:void(0);" onclick="reset();"><img class="logo_sm" src="Picture3.png"/></a>
+<input name="q" class="qt" id="q" value=""/>
+<input id="sug"/>
+<div id="delete" id="x"><span>x</span></div>
+<a href="javascript:void(0);" class="sbtn"></a>
+  <a class="ablink" href="https://thigames.github.io/oviiivo/">Oviiivo</a>
+  <a class="ablink" href="index.html">The Unbiased News Weekly</a>
+  <a class="ablink" href="https://sites.google.com/view/vanadebrowser/home">Vanade</a>
+  <a class="ablink" href="index.html">Home</a>
+  
+</div>
+
+<div class="tabs"><span id="tw" onclick="no_fade = 0; get_results(0);">Web</span> <span id="ti" onclick="no_fade = 0; get_images(0);">Images</span> <span id="ty" onclick="no_fade = 0; get_videos(0);">Videos</span></div>
+
+<div class="info" id="info"><span id="countp">About&nbsp;<span id="count"></span>&nbsp;results for&nbsp;<span id="query"></span>&nbsp;(<span id="speed"></span>&nbsp;seconds)<a class="ablink2" href="https://docs.google.com/forms/d/e/1FAIpQLSfEv6dlu4OmeunPSkqCOYRFFFDLCZnKOlsl-R1PuV5H2-UNkQ/viewform?usp=sf_link">Feedback</a>
+  <a class="ablink2" href="https://sites.google.com/view/aboutthinker/home">About THiNker</a>
+  <a class="ablink2" href="history.html">MyPath</a></span></div>
+
+<div class="res" id="res">
+</div>
+<div class="res_img" id="res_img">
+</div>
+<div class="res_yt" id="res_yt">
+</div>
+
+<br/><br/><br/><br/>
+
+<div class="main">
+	<img class="logo" src="Picture1.png"/>
+	<br/><br/>
+	<input name="qs" class="q" id="qs"/>
+	<br/><br/>
+	<a href="#" class="button"><span>Search</span></a>
+	&nbsp;&nbsp;
+	<a href="#" class="button" onclick="lucky();"><span>THiNk It!</span></a>
+</div>
+
+<center>
+<div class="footer" style="opacity:0.8;display:none">THiNker Search 1.0.0.0 - by <a href="https://sites.google.com/view/thinkworksofficial/home" >THiNkWorks</a>.   Powered by <a href="https://www.google.com/">Google</a>   Special Thanks to AirBrowse Technologies for the HTML  and <a href="https://github.com/greekdev">greekdev</a></div>
+</center>
+
+
+<script>
+sizeres();
+window.onresize=sizeres;
+
+function sizeres() {
+var bwidth = $(window).width() - 135; 
+var nwidth=bwidth.toString() + "px"; 
+$("#res").css({"width":nwidth});
+$("#res_img").css({"width":nwidth});
+$("#res_yt").css({"width":nwidth});
+
+bwidth=$(window).height() - 164;
+nwidth=bwidth.toString() + "px";
+$("#res").css({"height":nwidth});
+$("#res_img").css({"height":nwidth});
+$("#res_yt").css({"height":nwidth});
+}
+
+
+</script>
+
+</body>
+</html>
