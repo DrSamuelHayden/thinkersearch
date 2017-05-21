@@ -1,11 +1,3 @@
-/*
-AirBrowse Search 1.0/Google Clone 2.2
-Developed by AirBrowse Technologies/GreekDev
-
-http://airbrowsetechnologies.weebly.com/
-https://github.com/greekdev/google-clone
-*/
-
 app_name = "THiNker Search";
 loc = "el";
 var squery;
